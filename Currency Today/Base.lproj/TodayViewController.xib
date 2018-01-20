@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="Currency_Today" customModuleProvider="target">
+            <connections>
+                <outlet property="listViewController" destination="vqf-GD-vEK" id="hdC-N7-pfd"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <viewController id="vqf-GD-vEK" customClass="NCWidgetListViewController">
+            <connections>
+                <outlet property="delegate" destination="-2" id="NMB-D9-KxU"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="U6u-lA-7Zn"/>
+            </connections>
+        </viewController>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="320"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="NRJ-Wc-70k">
+                    <rect key="frame" x="0.0" y="20" width="328" height="300"/>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NRJ-Wc-70k" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="0oR-mB-b1a"/>
+                <constraint firstItem="NRJ-Wc-70k" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="IKN-Nh-GKo"/>
+                <constraint firstAttribute="trailing" secondItem="NRJ-Wc-70k" secondAttribute="trailing" id="QNr-Ev-4eA"/>
+                <constraint firstAttribute="bottom" secondItem="NRJ-Wc-70k" secondAttribute="bottom" constant="20" id="f4P-Bc-9mQ"/>
+            </constraints>
+            <point key="canvasLocation" x="267" y="59"/>
+        </customView>
+    </objects>
+</document>
